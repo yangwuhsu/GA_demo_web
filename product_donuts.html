@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src='jquery-3.4.1.min.js'></script>
-    <title>DemoSite</title>
+    <title>DemoSite-Donuts</title>
 </head>
 <body>
     <div class="wrap">
@@ -21,7 +21,8 @@
                 <a href="index.html" class="home" id='home'>
                     Home
                 </a>
-                <a href="cart.html" class="cart" id='cart'>
+                <a href="cart.html" class="cart" id='cart' target="_blank">
+                    <div class="cart_count"></div>
                     <img src="index_img/cart.svg" alt="">
                 </a>
             </nav>
@@ -30,24 +31,25 @@
     <div class="wrap pro-wrap">
         <div class="pro-flex">
             <div class="pro-pic">
-                <img src="index_img/cheer.svg" alt="">
+                <img src="index_img/donut.svg" alt="">
             </div>
             <div class="pro-line"></div>
             <div class="pro-content">
-                <h2>Beverage</h2>
+                <h2 class="pro-title">Donuts</h2>
                 <p class="pro-text">Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit.
                     Maecenas fermentum, magna ut luctus hendrerit, 
                     quam turpis accumsan nunc, quis vehicula
                     nunc ligula at turpis. Vestibulum tincidunt
                     velit eu enim dictum.</p>
-                <p class="pro-price">$1000</p>
+                <p class="pro-price">$1500</p>
                 <div class="pro-input">
-                    <input type="button" value="Add to cart" class="addCart">
+                    <input type="button" value="Add to cart" class="addCart" data-action="proAddCartBtn">
                     <input type="button" value="Check cart" class="checkCart">
                 </div>     
             </div>
         </div>
     </div>  
+    <script src="product.js"></script>
 </body>
 </html>

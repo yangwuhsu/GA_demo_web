@@ -55,7 +55,9 @@ nav{
     width:46px;
     height:46px;
     font-size: 20px;
-    background-color:#00AAAA;
+    background-color: #3C94C3;
+    box-shadow: rgba(0,0,0,0.2) 0 3px 6px ;
+  
 }
 .home{
     align-self: center;
@@ -98,7 +100,6 @@ nav{
     justify-content: center;
 }
 
-
 .item-pic{
     text-align: center;
     margin: auto;
@@ -119,26 +120,28 @@ input{
     width:200px;
     height:65px;
     border-radius: 35px;
-    background-color: #E9F3F7;
+    background-color:#3E89A5;
+    /* background-color: #E9F3F7; */
     border: none;
     font-size:30px;
-    color:#3E89A5;
+    color:#fff;
+    /* color:#3E89A5; */
     cursor: pointer;
     box-shadow: rgba(167,167,167,0.3) 3px 3px 6px;
     transition: 0.3s;
 }
 input:hover{
-    box-shadow: 0px 0px 0px 5px lightblue;
-    background:#3E89A5;
-    color: #fff;
+    box-shadow: 0px 0px 0px 4px#007799;
+    background-color: #E9F3F7;
+    color:#3E89A5;
 }
 .item input{
     margin:28px; 
 }
 .inputInCart{
-    background-color: #3E89A5;
-    box-shadow: 0px 0px 0px 5px lightblue;
-    color: #fff;
+    background-color: #E9F3F7;
+    box-shadow: 0px 0px 0px 4px #3E89A5;
+    color: #3E89A5;
     pointer-events: none;
     cursor:none;
 }
@@ -186,9 +189,8 @@ input:hover{
     
 }
 .checkCart{
-    background-color: #3E89A5;
-    color: #fff;
-    box-shadow: #A7A7A7 3px 3px 10px;
+    background-color: #E9F3F7;
+    color:#3E89A5;
     transition: 0.3s;
 }
 .pro-pic {
@@ -261,12 +263,13 @@ input:hover{
 .menu-flex{
     display: flex;
     align-items: center;
-    margin-top:20px; 
-    border-top:1px solid gray; 
-    border-bottom: 1px solid gray;
+    border-top:2px solid #6DA9BF; 
+    border-bottom: 2px solid #6DA9BF;
     height:60px; 
 }
 .cart-title{
+    margin-top:50px; 
+    padding-left:10px; 
     font-size: 30px;
 }
 .menu-item{
@@ -276,15 +279,10 @@ input:hover{
     text-align: center;
     box-sizing: border-box;
 }
-.menu-item:nth-child(2){
-    border-right: #0F5069 1px solid;
+.menu-item:nth-child(2),.menu-item:nth-child(3),.menu-item:nth-child(4){
+    border-right: #6DA9BF 2px solid;
 }
-.menu-item:nth-child(3){
-    border-right: #0F5069 1px solid;
-} 
-.menu-item:nth-child(4){
-    border-right: #0F5069 1px solid;
-} 
+
 .cart_container{
     height:100%;
 }
@@ -292,7 +290,7 @@ input:hover{
     padding-bottom:10px; 
     display:flex;
     align-items: center;
-    border-bottom: dashed 2px gray; 
+    border-bottom: dashed 2px #A5A9AA; 
 }
 .cart_item h3{
     font-size: 30px;
