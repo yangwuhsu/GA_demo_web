@@ -10,6 +10,7 @@
     <title>DemoSite</title>
 </head>
 <body>
+    <!-- header -->
     <div class="wrap">
         <div class="header">
             <div class="logo">
@@ -27,43 +28,83 @@
             </nav>
         </div>
     </div>
-    <div class="wrap">
+
+    <!-- 表頭 -->
+    <section class="wrap">
         <h2 class="cart-title">Shopping Cart</h2>
         <div class="menu-flex">
             <div class="menu-item">
-                <div class="item-head"></div>
-                <div class="cart-pic menu-pic">
-                    <img src="index_img/beer.svg" alt="">
-                </div>
-                <div class="cart-pic  menu-pic">
-                    <img src="index_img/donut.svg" alt="">
+                <div class="item-head">
+                 
                 </div>
             </div>
             <div class="menu-item">
                 <div class="item-head">Name</div>
-                <div class="cart-pic" >Beer</div>
-                <div class="cart-pic">Donuts</div>
             </div>
-            <div class="menu-line"></div>
+         
             <div class="menu-item">
                 <div class="item-head">Price</div>
-                <div class="cart-pic">$2000</div>
-                <div class="cart-pic">$1500</div>
             </div>
-            <div class="menu-line"></div>
+     
             <div class="menu-item">
                 <div class="item-head">Amount</div>
-                <div class="cart-pic">1</div>
-                <div class="cart-pic">1</div>
             </div>
-            <div class="menu-line"></div>
+     
             <div class="menu-item">
                 <div class="item-head">Subtotal</div>
-                <div class="cart-pic">$2000</div>
-                <div class="cart-pic">$2500</div>
             </div>
+        </div> 
+    </section>
+    <!-- 購物車內容 -->
+    <section class="wrap">
+        <div class="cart_container">
+            <div class="cart_item">
+                <div class="cart-pic">
+                    <img src="index_img/beer.svg" alt="" class="cart_item_image">
+                </div>
+                <h3 class="cart_item_name">Beer</h3>
+                <h3 class="cart_item_price">$1000</h3>
+                <h3 class="cart_item_amount">1</h3>
+                <h3 class="cart_item_subtotal">$2000</h3>
+            </div>
+            <div class="cart_item">
+                <div class="cart-pic">
+                    <img src="index_img/can.svg" alt="" class="cart_item_image">
+                </div>
+                <h3 class="cart_item_name">Garbage</h3>
+                <h3 class="cart_item_price">$2000</h3>
+                <h3 class="cart_item_amount">1</h3>
+                <h3 class="cart_item_subtotal">$2000</h3>
+            </div>
+            <div class="cart_item">
+                <div class="cart-pic">
+                    <img src="index_img/donut.svg" alt="" class="cart_item_image">
+                </div>
+                <h3 class="cart_item_name">Donuts</h3>
+                <h3 class="cart_item_price">$3000</h3>
+                <h3 class="cart_item_amount">1</h3>
+                <h3 class="cart_item_subtotal">$2000</h3>
+            </div>
+
         </div>
-       
-    </div>
+    </section>
 </body>
 </html>
+
+
+
+
+<!-- <section class="section">
+    <h2 class="text-center">Cart</h2>
+    <div class="cart">
+        <div class="cart__item">
+            <img class="cart__item__image" src="img/products/beer.svg" alt="Beer">
+            <h3 class="cart__item__name">Beer</h3>
+            <h3 class="cart__item__price">6.00</h3>
+        </div>
+    </div>
+    <div class="cart-footer">
+        <button class="btn btn--danger" data-action="CLEAR_CART">Clear Cart</button>
+        <button class="btn btn--primary" data-action="CHECKOUT">Pay $6</button>
+    </div>
+</section> -->
