@@ -1,0 +1,20 @@
+<!DOCTYPE html>        
+<html lang="en">        
+<head>        
+    <meta charset="UTF-8">        
+    <title>js 去掉字符串中的非数字</title>      
+    <style type="text/css">  
+    </style>   
+</head>        
+<body>  
+  <input type="text" id="m-code">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>  
+  <script type="text/javascript">  
+    $('#m-code').on('keyup', function() {
+      var val = $(this).val();
+      val = val.replace(/[^0-9]/ig,"");
+      $(this).val(val);
+    });
+  </script>  
+</body>        
+</html> 
