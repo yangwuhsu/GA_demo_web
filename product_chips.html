@@ -44,7 +44,7 @@
                     velit eu enim dictum.</p>
                 <p class="pro-price">$2500</p>
                 <div class="pro-input">
-                    <input type="button" value="Add to cart" class="addCart" data-action="proAddCartBtn">
+                    <input type="button" value="Add to cart" class="addCart" data-action="proAddCartBtn" id="Chips">
                     <a href="cart.html"  target="_blank">
                         <input type="button" value="Check cart" class="checkCart">
                     </a>
@@ -53,5 +53,10 @@
         </div>
     </div>  
     <script src="product.js"></script>
+    <script>
+        const chipsAddtoCartBtn = document.querySelector('#Chips');
+        chipsAddtoCartBtn.addEventListener('click',productAddtoCart);
+    </script>
+    
 </body>
 </html>

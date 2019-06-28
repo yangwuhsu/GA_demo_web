@@ -4,6 +4,7 @@
 
     // 顯示畫面的容器
     const cartDOM = document.querySelector('.cart_container');
+    
     // 查詢顯示結帳處
     const tatalBtn = document.querySelector('.cart_total_price');
 
@@ -12,18 +13,51 @@
 
     // 取得商品介紹頁被點擊的商品
     const productItems = JSON.parse(localStorage.getItem('productItems'));
-    console.log(productItems);
-
-    // 如果商品介紹有值 加入主要localstorage裡
-    if(productItems !== null){
-        cartContents.push(productItems);
-    }
-    // 總金額預設為零
-    totalPrice = 0;
+    console.log(typeof(productItems));
+    const productItemsArr = [];
 
     // 購物車數字
     const cartCount = document.querySelector('.cart_count');
-    if(cartContents.length > 0 ){
+     // 總金額預設為零
+     totalPrice = 0;
+   
+    // 如果商品介紹有值 加入主要localstorage裡
+    if(productItems !== null && cartContents !== null){
+            cartContents.push(productItems);
+        }else{
+            productItemsArr.push(productItems);
+            console.log(productItemsArr)
+            cartCount.textContent = productItemsArr.length;
+                productItemsArr.forEach(productItem => {
+                    // 去掉錢符號取出價錢
+                    const subCartPrice = productItem.price.substring(1);
+                    // 把字串數字化並加回總金額
+                    totalPrice += parseInt(subCartPrice);
+                    // 替換總價格
+                    tatalBtn.textContent = `$${totalPrice}`;
+                    // 插入商品內容
+                    cartDOM.insertAdjacentHTML('beforeend',
+                    ` <div class="cart_item">
+                        <div class="cart-pic">
+                        <img src="${productItem.image}" alt="" class="cart_item_image">
+                    </div>
+                    <h3 class="cart_item_name">${productItem.name}</h3>
+                    <h3 class="cart_item_price">${productItem.price}</h3>
+                    <h3 class="cart_item_amount">1</h3>
+                    <h3 class="cart_item_subtotal">${productItem.price}</h3>
+                    </div>`
+                );
+            });
+        }
+    
+        
+    
+
+   
+
+
+    
+    if(cartContents !== null ){
         cartCount.textContent = cartContents.length;
         cartContents.forEach(cartContent => {
             // 去掉錢符號取出價錢
@@ -46,7 +80,6 @@
             );
         });
     }
-
     checkOut.addEventListener('click',()=>{
         localStorage.clear();
     })
