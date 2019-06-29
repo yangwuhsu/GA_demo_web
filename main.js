@@ -6,33 +6,25 @@ function Init(){
     var localGetCart = [];
     var CartArr = [];
 
+   
     
     ReloadCart()
 
     function ReloadCart(){
-        
         localGetCart = JSON.parse(localStorage.getItem('cartItems'));
+        console.log(localGetCart);
         if(localGetCart){
             CartArr = localGetCart;
             cartCount.textContent = CartArr.length;
-
-            //  console.log(CartArr);
-            //  判斷該頁有無加到購物車按鈕
-            console.log(addCartBtns.length)
+          
             if(addCartBtns.length >0){
                 CartId = CartArr.map(item =>item.id);
                 CartId.forEach(element=>{
-                        console.log(addCartBtns[element])
-                        addCartBtns[element].value='In Cart';
-                        addCartBtns[element].classList.add('inputInCart'); 
+                    console.log(addCartBtns[element])
+                    addCartBtns[element].value='In Cart';
+                    addCartBtns[element].classList.add('inputInCart'); 
                 })
-                // for(let i=0;i<CartId.length;i++){
-                //     CartId[i]=
-                // }
-                    // for(let i = 0;i<CartId.length; i++){
-                    //     addCartBtns[i].value='In Cart';
-                    //     addCartBtns[i].classList.add('inputInCart');  
-                    // }
+               
             }
                 
         }
@@ -69,7 +61,6 @@ function Init(){
             
             if(addCartBtns[index].value !== 'In Cart'){
                 addCartBtns[index].value='In Cart';
-                // addCartBtns[index].classList.add('inputInCart'); 
                 CartArr.push(productArr[index]);
                 localStorage.setItem('cartItems',JSON.stringify(CartArr));
               
