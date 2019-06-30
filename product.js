@@ -1,16 +1,32 @@
     function Init(){
         var localGetCart = [];
         var CartArr = [];
-
+        // 抓購物車數量的dom
+        const cartCount = document.querySelector('.cart_count');
+        productBtns = document.querySelectorAll('.addCart');
+        // const InitAddtoCart = document.querySelector('.addCart'); 
+        // var InitProductName = document.querySelector('.pro-title');
         reloadCart();
         function reloadCart(){
-            var localgetCart = JSON.parse(localStorage.getItem('cartItems'));
+            var localGetCart = JSON.parse(localStorage.getItem('cartItems'));
+            if(localGetCart){
+                CartArr = localGetCart;
+                cartCount.textContent = CartArr.length;
+                // console.log(CartArr);
+                // console.log(InitProductName.innerText);
+                CartArr.forEach(element=>{
+                       console.log(element.name);
+                       productBtns[0].value = 'In Cart'
+                        productBtns[0].classList.add('inputInCart');
+                   
+               })
+            }
             
 
         }
-        // 抓加到購物車按鈕，並取得這頁點擊的商品資訊
+        // 抓所有加到購物車按鈕，並取得這頁點擊的商品資訊
         productBtns = document.querySelectorAll('.addCart');
-        console.log(productBtns);
+        // console.log(productBtns);
         productBtns.forEach(productBtn => {
             productBtn.addEventListener('click',()=>{
                 DomId = productBtn.id;
@@ -19,7 +35,6 @@
                 const btnGrandpa = btnParent.parentNode;
                 const ddd = btnGrandpa.parentNode.childNodes.item(1);
                 const productImage = ddd.querySelector('img');
-         
                 const productPrice = btnGrandpa.querySelector('.pro-price');
                 // console.log(productPrice.innerText);
                 if(DomId === 'Beverage'){
@@ -55,14 +70,16 @@
                         amount:1
                     }
                 }
-                console.log(productElement);
-                
+
                 addToCart(DomId);
             });
         });
 
-        function addToCart(thisId){
-            console.log(DomId);
+        function addToCart(DomId){
+           if( productBtns.value !== 'In Cart')
+            CartArr.push(productElement);
+            localStorage.setItem('cartItems',JSON.stringify(CartArr));
+            reloadCart();
         }
        
       

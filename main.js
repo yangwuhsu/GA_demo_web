@@ -1,26 +1,28 @@
 function Init(){
+    var localGetCart = [];
+    var CartArr = [];
     // 抓購物車數量的dom
     const cartCount = document.querySelector('.cart_count');
     // 抓購物車按鈕
     const addCartBtns = document.querySelectorAll('.addCart');
-    var localGetCart = [];
-    var CartArr = [];
-
-   
     
     ReloadCart()
 
     function ReloadCart(){
-        localGetCart = JSON.parse(localStorage.getItem('cartItems'));
+        var localGetCart = JSON.parse(localStorage.getItem('cartItems'));
         console.log(localGetCart);
+        // console.log(CartArr);
         if(localGetCart){
+            console.log(localGetCart);
+            // console.log(localGetCart)
             CartArr = localGetCart;
+            // console.log(CartArr);
             cartCount.textContent = CartArr.length;
           
             if(addCartBtns.length >0){
                 CartId = CartArr.map(item =>item.id);
                 CartId.forEach(element=>{
-                    console.log(addCartBtns[element])
+                    // console.log(addCartBtns[element])
                     addCartBtns[element].value='In Cart';
                     addCartBtns[element].classList.add('inputInCart'); 
                 })
@@ -29,11 +31,7 @@ function Init(){
                 
         }
     }
-    console.log(CartArr);
-
-    
-
-
+ 
 
     // 存商品資訊
     productArr = [];
@@ -60,7 +58,7 @@ function Init(){
         addCartBtn.addEventListener('click',()=>{
             
             if(addCartBtns[index].value !== 'In Cart'){
-                addCartBtns[index].value='In Cart';
+                // addCartBtns[index].value='In Cart';
                 CartArr.push(productArr[index]);
                 localStorage.setItem('cartItems',JSON.stringify(CartArr));
               
