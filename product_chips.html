@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src='jquery-3.4.1.min.js'></script>
-    <title>DemoSite-Chips</title>
+    <title>Chips</title>
 </head>
 <body>
-    <div class="wrap">
+     <!-- header -->
+     <div class="wrap">
         <div class="header">
             <div class="logo">
                 <a href="index.html" id="logo">
-                    <img src="index_img/logo.png" alt="">
+                    <img src="index_img/logo.png">
                 </a>
             </div>
             <nav>
                 <a href="index.html" class="home" id='home'>
                     Home
                 </a>
-                <a href="cart.html" class="cart" id='cart' target="_blank">
-                    <div class="cart_count"></div>
-                    <img src="index_img/cart.svg" alt="">
+                <a href="cart.html" class="cart" id='cart'>
+                    <div class="cart_count">0</div>
+                    <img src="index_img/cart.svg">
                 </a>
             </nav>
         </div>
     </div>
+
+    <!-- content -->
     <div class="wrap pro-wrap">
         <div class="pro-flex">
             <div class="pro-pic">
@@ -44,9 +47,9 @@
                     velit eu enim dictum.</p>
                 <p class="pro-price">$2500</p>
                 <div class="pro-input">
-                    <input type="button" value="Add to cart" class="addCart" data-action="proAddCartBtn" id="Chips">
-                    <a href="cart.html"  target="_blank">
-                        <input type="button" value="Check cart" class="checkCart">
+                    <input type="button" value="Add to cart" class="addCart" data-action="proAddCartBtn" id="product_AddCart_chips">
+                    <a href="cart.html" id="product_CheckCart_chips">
+                        <input type="button" value="Check Cart" class="checkCart">
                     </a>
                 </div>     
             </div>

@@ -123,14 +123,13 @@ input{
     height:65px;
     border-radius: 35px;
     background-color:#3E89A5;
-    /* background-color: #E9F3F7; */
     border: none;
     font-size:30px;
     color:#fff;
-    /* color:#3E89A5; */
     cursor: pointer;
     box-shadow: rgba(167,167,167,0.3) 3px 3px 6px;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 input:hover{
     box-shadow: 0px 0px 0px 4px#007799;
@@ -155,12 +154,11 @@ input:hover{
     border: solid 2px lightgray;
 }
 .InCartText{
-    color: lightgray;
-    
+    color: lightgray;   
 }
 .inputInCart{
     background-color: #fff;
-    box-shadow: 0px 0px 0px 4px lightgray;
+    box-shadow: 0px 0px 0px 3px lightgray;
     color: #3E89A5;
     pointer-events: none;
     cursor:not-allowed;
@@ -197,7 +195,6 @@ input:hover{
 .pro-flex{
     display: flex;
     justify-content:center;
-    
 }
 .checkCart{
     background-color: #E9F3F7;
@@ -215,7 +212,9 @@ input:hover{
 .pro-content{
     width:35%;
     padding: 80px 52px;
+    position: relative;
 }
+
 .pro-content h2{
     font-size: 48px;
     padding-bottom: 10px;
@@ -236,8 +235,18 @@ input:hover{
     vertical-align: bottom;
     padding-top:23%; 
 }
-.pro-input input{
+.pro-input a input{
+    height:65px;
+    background-color:#3E89A5;
+    color:#fff;
+    box-shadow: rgba(167,167,167,0.3) 6px 6px 10px;
+ 
     margin:0 0 0 16px; 
+}
+.pro-input a input:hover{
+    box-shadow: 0px 0px 0px 4px#007799;
+    background-color: #E9F3F7;
+    color:#3E89A5;
 }
 .thank-des{
     width:90%;

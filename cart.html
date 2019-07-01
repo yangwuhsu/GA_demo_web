@@ -7,29 +7,28 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src='jquery-3.4.1.min.js'></script>
-    <title>DemoSite-Cart</title>
+    <title>Cart</title>
 </head>
 <body>
-    <!-- header -->
-    <div class="wrap">
-            <div class="header">
-                <div class="logo">
-                    <a href="index.html" id="logo" >
-                        <img src="index_img/logo.png" alt="">
-                    </a>
-                </div>
-                <nav>
-                    <a href="index.html" class="home" id='home'>
-                        Home
-                    </a>
-                    <a href="cart.html" class="cart" id='cart'>
-                        <div class="cart_count">0</div>
-                        <img src="index_img/cart.svg" alt="">
-                    </a>
-                  
-                </nav>
+     <!-- header -->
+     <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" id="logo">
+                    <img src="index_img/logo.png">
+                </a>
             </div>
+            <nav>
+                <a href="index.html" class="home" id='home'>
+                    Home
+                </a>
+                <a href="cart.html" class="cart" id='cart'>
+                    <div class="cart_count">0</div>
+                    <img src="index_img/cart.svg">
+                </a>
+            </nav>
         </div>
+    </div>
 
     <!-- 表頭 -->
     <section class="wrap">
@@ -65,8 +64,8 @@
             <div class="cart_front"></div>
             <h3 class="cart_total">$Total</h3>
             <h3 class="cart_total_price">$0</h3>
-            <a href="thank.html" class="cart_check_out_container" target="_blank">
-                <input type="button" value="Check Out" class="cart_check_out">
+            <a href="thank.html" class="cart_check_out_container" >
+                <input type="button" value="Check Out" class="cart_check_out" id="check-out">
             </a>
         </footer>
     </section>

@@ -7,31 +7,33 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src='jquery-3.4.1.min.js'></script>
-    <title>DemoSite-Donuts</title>
+    <title>Donuts</title>
 </head>
 <body>
+    <!-- header -->
     <div class="wrap">
         <div class="header">
             <div class="logo">
                 <a href="index.html" id="logo">
-                    <img src="index_img/logo.png" alt="">
+                    <img src="index_img/logo.png">
                 </a>
             </div>
             <nav>
                 <a href="index.html" class="home" id='home'>
                     Home
                 </a>
-                <a href="cart.html" class="cart" id='cart' target="_blank">
+                <a href="cart.html" class="cart" id='cart'>
                     <div class="cart_count">0</div>
-                    <img src="index_img/cart.svg" alt="">
+                    <img src="index_img/cart.svg">
                 </a>
             </nav>
         </div>
     </div>
+
     <div class="wrap pro-wrap">
         <div class="pro-flex">
             <div class="pro-pic">
-                <img src="index_img/donut.svg" alt="">
+                <img src="index_img/donuts.svg">
             </div>
             <div class="pro-line"></div>
             <div class="pro-content">
@@ -44,9 +46,9 @@
                     velit eu enim dictum.</p>
                 <p class="pro-price">$1500</p>
                 <div class="pro-input">
-                    <input type="button" value="Add to cart" class="addCart" data-action="proAddCartBtn" id="Donut">
-                    <a href="cart.html"  target="_blank">
-                        <input type="button" value="Check cart" class="checkCart">
+                    <input type="button" value="Add to cart" class="addCart" data-action="proAddCartBtn" id="product_AddCart_donuts">
+                    <a href="cart.html" id='product_CheckCart_donuts'>
+                        <input type="button" value="Check Cart" class="checkCart">
                     </a>
                 </div>     
             </div>
