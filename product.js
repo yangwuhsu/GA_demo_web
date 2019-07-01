@@ -13,8 +13,7 @@
                 cartCount.textContent = CartArr.length;
                 CartArr.forEach(element=>{
                     if(element.name === InitProductName.innerText){
-                        console.log(element.name);
-                       productBtns[0].value = 'In Cart'
+                        productBtns[0].value = 'In Cart'
                         productBtns[0].classList.add('inputInCart');
                     }
                })
@@ -36,7 +35,7 @@
                     productElement={
                         id:0,
                         image:productImage.src,
-                        name:DomId,
+                        name:'Beverage',
                         price:productPrice.innerText,
                         amount:1
                     }
@@ -44,7 +43,7 @@
                     productElement={
                         id:1,
                         image:productImage.src,
-                        name:DomId,
+                        name:'Donuts',
                         price:productPrice.innerText,
                         amount:1
                     }
@@ -52,7 +51,7 @@
                     productElement={
                         id:2,
                         image:productImage.src,
-                        name:DomId,
+                        name:'Beer',
                         price:productPrice.innerText,
                         amount:1
                     }
@@ -60,7 +59,7 @@
                     productElement={
                         id:3,
                         image:productImage.src,
-                        name:DomId,
+                        name:'Chip',
                         price:productPrice.innerText,
                         amount:1
                     }
