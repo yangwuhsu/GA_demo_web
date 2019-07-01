@@ -18,8 +18,6 @@
                        productBtns[0].value = 'In Cart'
                         productBtns[0].classList.add('inputInCart');
                     }
-                       
-                   
                })
             }
             

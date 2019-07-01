@@ -1,7 +1,9 @@
 /* *{
     outline: 1px solid red;
 } */
-
+body { 
+    overflow-y: scroll; 
+}
 /* --------------首頁----------------- */
 
 img{
@@ -138,18 +140,9 @@ input:hover{
 .item input{
     margin:28px; 
 }
-.inputInCart{
-    background-color: #E9F3F7;
-    box-shadow: 0px 0px 0px 4px #3E89A5;
-    color: #3E89A5;
-    pointer-events: none;
-    cursor:none;
-}
 
-.product:hover .item-pic{
-    animation: .5s shake-product-image;
-}
 .product{
+    box-sizing: border-box;
     border:2px dashed #3E89A5;
     text-align: center;
     margin: 20px;
@@ -157,6 +150,24 @@ input:hover{
 }
 .product:hover{
     border-style: solid;
+}
+.InCartBorder{
+    border: solid 2px lightgray;
+}
+.InCartText{
+    color: lightgray;
+    
+}
+.inputInCart{
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 4px lightgray;
+    color: #3E89A5;
+    pointer-events: none;
+    cursor:not-allowed;
+}
+
+.product:hover .item-pic{
+    animation: .5s shake-product-image;
 }
 
 @keyframes shake-product-image{

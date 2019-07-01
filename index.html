@@ -7,33 +7,32 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src='jquery-3.4.1.min.js'></script>
-    <title>DemoSite</title>
+    <title>Index</title>
 </head>
 <body>
     <!-- header -->
     <div class="wrap">
         <div class="header">
             <div class="logo">
-                <a href="index.html" id="logo" >
-                    <img src="index_img/logo.png" alt="">
+                <a href="index.html" id="logo">
+                    <img src="index_img/logo.png">
                 </a>
             </div>
             <nav>
                 <a href="index.html" class="home" id='home'>
                     Home
                 </a>
-                <a href="cart.html" class="cart" id='cart' target="_blank">
+                <a href="cart.html" class="cart" id='cart'>
                     <div class="cart_count">0</div>
-                    <img src="index_img/cart.svg" alt="">
+                    <img src="index_img/cart.svg">
                 </a>
-              
             </nav>
         </div>
     </div>
 
     <!-- camp banner -->
     <!-- <div class="wrap">
-        <a href="camp.html" class="banner" id='camp' target="_blank">
+        <a href="camp.html" class="banner" id='campaign_site'>
             <h2>SUMMER SALE</h2>
             <h3>25% OFF PLUS FREE SHIPPING</h3>
         </a>
@@ -43,10 +42,10 @@
     <div class="wrap item-wrap">
         <div class="item-flex">
 
-            <div class="product item" id='index_Beverage'>
-                <a href="product_beverage.html" target="_blank">
+            <div class="product item">
+                <a href="product_beverage.html" id='index_beverage'>
                     <div class="item-pic soda-pic">
-                        <img src="index_img/cheer.svg" alt="" class="product-image">
+                        <img src="index_img/beverage.svg" alt="" class="product-image">
                     </div>
                     <div class="item-title">
                         Beverage
@@ -55,13 +54,13 @@
                         $1000
                     </div>
                 </a>
-                <input type="button" value="Add to cart" class="addCart">
+                <input type="button" value="Add to cart" class="addCart" id="index_addCart_beverage">
             </div>
 
-            <div class="product item" id='index_Donuts'>
-                <a href="product_donuts.html" target="_blank">
+            <div class="product item">
+                <a href="product_donuts.html" id='index_donuts'>
                     <div class="item-pic soda-pic">
-                        <img src="index_img/donut.svg" alt="" class="product-image">
+                        <img src="index_img/donuts.svg" alt="" class="product-image">
                     </div>
                     <div class="item-title">
                         Donuts
@@ -70,13 +69,13 @@
                         $1500
                     </div>
                 </a>
-                <input type="button" value="Add to cart" class="addCart">
+                <input type="button" value="Add to cart" class="addCart" id="index_addCart_donuts">
             </div>
 
             <div class="product item">
-                <a href="product_beer.html" target="_blank">
+                <a href="product_beer.html" id='index_beer'>
                     <div class="item-pic soda-pic">
-                        <img src="index_img/beer.svg" alt=""  class="product-image">
+                        <img src="index_img/beer.svg" class="product-image">
                     </div>
                     <div class="item-title">
                         Beer
@@ -85,11 +84,11 @@
                         $2000
                     </div>
                 </a>
-                <input type="button" value="Add to cart" class="addCart">
+                <input type="button" value="Add to cart" class="addCart" id="index_addCart_beer">
             </div>
 
-            <div class="product item" id='index_Chips'>
-                <a href="product_chips.html" target="_blank">
+            <div class="product item" id='index_chips'>
+                <a href="product_chips.html">
                     <div class="item-pic soda-pic">
                         <img src="index_img/chips.svg" alt="" class="product-image">
                     </div>
@@ -100,10 +99,11 @@
                         $2500
                     </div>
                 </a>
-                <input type="button" value="Add to cart" class= "addCart">
+                <input type="button" value="Add to cart" class= "addCart" id="index_addCart_chips">
             </div>
         </div>
     </div>    
+
 
     
     <script src="main.js"></script>
