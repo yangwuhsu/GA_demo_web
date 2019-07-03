@@ -3,8 +3,8 @@
         var CartArr = [];
         // 抓購物車數量的dom
         const cartCount = document.querySelector('.cart_count');
-        var productBtns = document.querySelectorAll('.addCart');
-        var InitProductName = document.querySelector('.pro-title');
+        const productBtns = document.querySelectorAll('.addCart');
+        const InitProductName = document.querySelector('.pro-title');
         reloadCart();
         function reloadCart(){
             var localGetCart = JSON.parse(localStorage.getItem('cartItems'));
@@ -20,7 +20,6 @@
             }
         }
         // 抓所有加到購物車按鈕，並取得這頁點擊的商品資訊
-        productBtns = document.querySelectorAll('.addCart');
         productBtns.forEach(productBtn => {
             productBtn.addEventListener('click',()=>{
                 DomId = productBtn.id;
@@ -59,7 +58,7 @@
                     productElement={
                         id:3,
                         image:productImage.src,
-                        name:'Chip',
+                        name:'Chips',
                         price:productPrice.innerText,
                         amount:1
                     }

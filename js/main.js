@@ -31,14 +31,6 @@ function Init(){
                     
 
                 })
-                
-                // CartId = CartArr.map(item =>item.id);
-                // CartId.forEach(element=>{
-                //     console.log(element);
-                //     addCartBtns[element].value='In Cart';
-                //     addCartBtns[element].classList.add('inputInCart'); 
-                // })
-               
             }
                 
         }
@@ -70,15 +62,10 @@ function Init(){
         addCartBtn.addEventListener('click',()=>{
             
             if(addCartBtns[index].value !== 'In Cart'){
-                // addCartBtns[index].value='In Cart';
                 CartArr.push(productArr[index]);
                 localStorage.setItem('cartItems',JSON.stringify(CartArr));
-              
                 ReloadCart();
                 console.log(JSON.parse(localStorage.getItem('cartItems')));
-
-            }else{
-                alert('已加到購物車');
             }
         });
     });
