@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Literata|Slabo+27px&display=swap" rel="stylesheet">
-    <script src='jquery-3.4.1.min.js'></script>
     <title>Cart</title>
 </head>
 <body>
@@ -76,17 +75,19 @@
     <!-- 購物車內容 -->
     <section class="wrap cart-content-wrap">
         <div class="cart_container"></div>
-        <footer class="cart_footer">
+        <div class="cart_footer">
             <div class="cart_front"></div>
             <div class="cart_front"></div>
             <h3 class="cart_total">$Total</h3>
             <h3 class="cart_total_price">$0</h3>
-            <a href="thank.html" class="cart_check_out_container" >
+            <div class="cart_check_out_container" >
                 <input type="button" value="Check Out" class="cart_check_out" id="check-out">
-            </a>
-        </footer>
+            </div>
+        </div>
     </section>
-    
+    <footer class="wrap index-wrap">
+        Copyright©2019 SalesFrontier.All Rights Reserved.
+    </footer>
     <script src="../js/cart.js"></script>
 </body>
 </html>

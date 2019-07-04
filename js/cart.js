@@ -54,17 +54,15 @@ const Init = () =>{
         );
     });
     checkOut.addEventListener('click',()=>{
-        ReloadCart();
         if(CartArr.length<1){
-            alert('Please choose product.');
-            event.preventDefault();
-            window.location.replace('../index.html');
+            alert('Please Choose Products.');   
+            window.location.replace('../index.html'); 
+            
         }else{
             localStorage.clear();
+            window.location.replace('thank.html');
         }
         ReloadCart();
-        
-       
     });
 }
 

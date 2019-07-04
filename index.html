@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Literata|Slabo+27px&display=swap" rel="stylesheet">
-    <script src='jquery-3.4.1.min.js'></script>
-    <title>Index</title>
+    <title>GA Demo Web</title>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -48,7 +47,7 @@
     <div class="wrap">
         <a href="html/camp.html" class="banner" id='campaign_site'>
             <h2 class="banner-title">SUMMER SALE</h2>
-            <h3 class="banner-text">25% off plus free shiping</h3>
+            <h3 class="banner-text">25% off plus free shipping</h3>
         </a>
     </div>
 
@@ -56,8 +55,8 @@
     <div class="wrap item-wrap">
         <div class="item-flex">
 
-            <div class="product item">
-                <a href="html/product_beverage.html" id='index_beverage'>
+            <div class="product item" id='index_beverage'>
+                <a href="html/product_beverage.html" class="product-container">
                     <div class="item-pic soda-pic">
                         <img src="index_img/beverage.svg" alt="" class="product-image">
                     </div>
@@ -69,10 +68,11 @@
                     </div>
                 </a>
                 <input type="button" value="Add to cart" class="addCart" id="index_AddCart_beverage">
+                
             </div>
 
-            <div class="product item">
-                <a href="html/product_donuts.html" id='index_donuts'>
+            <div class="product item" id='index_donuts'>
+                <a href="html/product_donuts.html" class="product-container">
                     <div class="item-pic soda-pic">
                         <img src="index_img/donuts.svg" alt="" class="product-image">
                     </div>
@@ -82,12 +82,13 @@
                     <div class="price">
                         $1500
                     </div>
-                </a>
+                </a>  
                 <input type="button" value="Add to cart" class="addCart" id="index_AddCart_donuts">
+                  
             </div>
 
-            <div class="product item">
-                <a href="html/product_beer.html" id='index_beer'>
+            <div class="product item" id='index_beer'>
+                <a href="html/product_beer.html" class="product-container">
                     <div class="item-pic soda-pic">
                         <img src="index_img/beer.svg" class="product-image">
                     </div>
@@ -99,10 +100,11 @@
                     </div>
                 </a>
                 <input type="button" value="Add to cart" class="addCart" id="index_AddCart_beer">
+                
             </div>
 
             <div class="product item" id='index_chips'>
-                <a href="html/product_chips.html">
+                <a href="html/product_chips.html" class="product-container">
                     <div class="item-pic soda-pic">
                         <img src="index_img/chips.svg" alt="" class="product-image">
                     </div>
@@ -114,9 +116,14 @@
                     </div>
                 </a>
                 <input type="button" value="Add to cart" class= "addCart" id="index_AddCart_chips">
+                
             </div>
         </div>
     </div>    
+
+    <footer class="wrap index-wrap">
+        Copyright©2019 SalesFrontier.All Rights Reserved.
+    </footer>
 
     <script src="js/main.js"></script>
     
