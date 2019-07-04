@@ -87,7 +87,7 @@ nav{
     width:100%;
     max-width: 2500px;
     background-size:cover; 
-    height: 36vh;
+    height: 44vh;
     background-position:bottom; 
     background-image: url('../index_img/1.jpeg');
     position: relative;
@@ -103,12 +103,19 @@ nav{
 .banner-title,.banner-text{
     color:#3E89A5;
     font-size:60px; 
+    transition: .5s;
 }
 .banner-text{
     font-size: 42px;
     padding-left:60px; 
     color:rgb(31, 138, 177);
     text-shadow: 1px 1px 2px #E9F3F7;
+}
+.banner:hover .banner-title{
+    text-shadow: 1px 1px 2px white;
+}
+.banner:hover .banner-text{
+    text-shadow: none;
 }
 .item-pic{
     width:60%;
@@ -205,6 +212,7 @@ input:hover{
         transform: rotate(0deg);
     }
 }
+
 
 
 
@@ -393,6 +401,7 @@ input:hover{
     width:65%;
     margin: 30px;
 }
+
 .camp-btn input{
     background: #FDCD43;
     color:#023E55;
@@ -445,7 +454,7 @@ input:hover{
 .camp-btn-two{
     padding-top:30px; 
     text-align: right;
-    margin-right:8%; 
+    margin-right:5%; 
 }
 
 /* --------------第三屏----------------- */
@@ -479,9 +488,6 @@ input:hover{
 }
 
 /* --------------第四屏----------------- */
-/* .wrap:nth-child(5){
-    padding-bottom:100px;
-} */
 .camp-flex-circle{
     display: flex;
     justify-content: center;
@@ -527,6 +533,7 @@ input:hover{
 
 .camp-title-final{
     text-align: center;
+    padding-top:50px; 
 }
 .camp-text-circle{
     width:50%;
@@ -553,7 +560,7 @@ input:hover{
     align-items: flex-end;
 }
 .camp-btn-circle{
-    padding-left:23%; 
+    padding-left:20%; 
 }
 /* ---------------footer----------------- */
 footer{
@@ -567,8 +574,13 @@ footer{
 
 @media screen and (max-width:959px){
     .banner{
-        height:30vh;
+        height:28vh;
     }
+    .banner-title{
+        padding-top:24px; 
+        font-size: 50px;
+    }
+
 }
 
 @media screen and (max-width:1100px){
@@ -576,6 +588,9 @@ footer{
         width:130px;
         height:45px;
         font-size: 20px;
+    }
+    .cart_check_out{
+        width:90%;
     }
 }
 
@@ -585,6 +600,12 @@ footer{
     }
     .product-container .price{
         font-size: 20px;
+    }
+    .cart_footer h3{
+        font-size: 30px;
+    }
+    .cart_check_out{
+        height:60px;
     }
 }
 
@@ -600,6 +621,20 @@ footer{
     .product-container .price{
         font-size: 18px;
     }
+    .cart_check_out{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:610px){
+    .banner-title{
+        font-size: 42px;
+    }
+    .banner-text{
+        font-size: 30px;
+    }
+    .banner{
+        height:26vh;
+    }
 }
 @media screen and (max-width:540px){
     .addCart{
@@ -609,4 +644,34 @@ footer{
     .product-container .price{
         padding-bottom:10px;
     }
+    .banner{
+        height:20vh;
+    }
+    .banner-title{
+        font-size: 34px;
+    }
+    .banner-text{
+        font-size: 28px;
+    }
+    .header{
+        height:80px;
+    }
+    .logo{
+        width: 160px;
+    }
+    .home{
+        font-size: 20px;
+    }
+    .cart{
+        width:40px;
+        margin:0 40px 0 10px;
+    }
+    .cart_count{
+        width:36px;
+        height:36px;
+        top:-10px;
+        font-size: 16px;
+    }
+    
 }
+

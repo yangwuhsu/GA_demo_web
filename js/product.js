@@ -3,9 +3,10 @@
         var CartArr = [];
         // 抓購物車數量的dom
         const cartCount = document.querySelector('.cart_count');
-        const productBtns = document.querySelectorAll('.addCart');
+        const productBtns = document.querySelectorAll('.addCartProduct');
         const InitProductName = document.querySelector('.pro-title');
         reloadCart();
+
         function reloadCart(){
             var localGetCart = JSON.parse(localStorage.getItem('cartItems'));
             if(localGetCart){
